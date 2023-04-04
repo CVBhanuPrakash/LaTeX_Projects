@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+\usepackage[
+  height=9in,      % height of the text block
+  width=7in,       % width of the text block
+  top=78pt,        % distance of the text block from the top of the page
+  headheight=52pt, % height for the header block
+  headsep=12pt,    % distance from the header block to the text block
+  heightrounded,   % ensure an integer number of lines
+  verbose,         % show the values of the parameters in the log file
+]{geometry}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\setlength{\extrarowheight}{5pt}
+\usepackage{subcaption}%
+
+% header and footer
+\pagestyle{fancy}
+\fancyhf{\LARGE\textbf{Learn Basics} \\ \textbf{Chapter Report}}%
+\rhead{Subject : \textbf{Math} \\ Class : \textbf{6} \\ Chapter : \textbf{5. Fractions}}%
+\lhead{  \includegraphics[width=1.5cm, height=1.5cm]{LearnBasics logo}  }{}%
+\lfoot{\textbf{XYZ School}}%
+\rfoot{XYZ1118 C6M05 CR##1}%
+\cfoot{\thepage}
+
+\renewcommand{\headrulewidth}{2pt}% Default \headrulewidth is 0.4pt
+\renewcommand{\footrulewidth}{2pt}% Default \footrulewidth is 0pt
+
+\renewcommand{\arraystretch}{1.2}
+
+\begin{document}
+
+\begin{center}
+   \huge{Homework Questions Report}
+   \linebreak%
+   \underline{\LARGE\textbf{Estimation of Numbers}} 
+\end{center}
+
+\vspace{0.5cm}\\%
+Concepts Tested in the Question: 
+
+Estimating to the nearest tens by rounding off
+
+Estimating to the nearest hundreds by rounding off
+
+Estimating to the nearest thousands by rounding off
+
+\vspace{1cm}\\
+
+\begin{tabularx}{0.9\textwidth} { 
+  | >{\centering\arraybackslash}X 
+  | >{\centering\arraybackslash}X | }
+ \hline
+ Total Students & \textbf{30}\\
+ \hline
+ No.of Students attended the test  & \textbf{23}\\
+\hline
+ Absent & \textbf{7} \\
+\hline
+ Start Time & \textbf{7:00 PM-15th May} \\
+\hline
+ End Time & \textbf{8:00 PM-16th May} \\
+\hline
+ Total Questions & \textbf{5-Basic Questions} \\
+\hline
+\end{tabularx}
+\vspace{0.5cm}\\
+
+%%%%%%%%%%%%%%%%%%%%% Two tables side by side %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}
+    \begin{subtable}[t]{.5\textwidth}
+    \caption{\underline{Top 5 performers :}}
+        \raggedright
+            \begin{tabularx}{0.9\textwidth} { 
+            | >{\centering\arraybackslash}X 
+            | >{\centering\arraybackslash}X 
+            | >{\centering\arraybackslash}X 
+            | >{\centering\arraybackslash}X | }
+            \hline
+            \textbf{S.No} & \textbf{Name} & \textbf{Score} & \textbf{Time Taken} \\
+            \hline
+            1 & Arjun & 5 & 5:30min \\
+            \hline
+            1 & Bhanu & 5 & 5:00min \\
+            \hline
+            1 & Chandu & 3 & 4:30min \\
+            \hline
+            1 & Deepu & 4 & 2:30min \\
+            \hline
+            1 & Varun & 5 & 4:34min \\
+            \hline
+            \end{tabularx}
+    \end{subtable}%
+    \begin{subtable}[t]{.4\textwidth}
+    \caption{\underline{Absentees :}}
+        \raggedleft
+        \begin{tabularx}{0.9\textwidth} { 
+          | >{\centering\arraybackslash}X 
+          | >{\centering\arraybackslash}X | }
+         \hline
+         \textbf{S.No} & \textbf{Name}\\
+         \hline
+         1 & Anind \\
+         \hline
+         2 & Bharath \\
+         \hline
+         3 & Code \\
+         \hline
+         4 & Drama \\
+         \hline
+         5 & Dheeraj \\
+         \hline
+         6 & Lohith \\
+         \hline
+         7 & Murali \\
+         \hline
+        \end{tabularx}
+    \end{subtable}
+\end{table}
+\end{document}
